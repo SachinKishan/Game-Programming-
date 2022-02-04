@@ -37,9 +37,9 @@ public class Ally : MonoBehaviour
         switch(state)
         {
             case State.Idle:
-		if(decisionTime>0)
+		if(dt>0)
 		{
-			decisionTime-=Time.deltaTime*decisionRate;
+			dt-=Time.deltaTime*decisionRate;
 		}
                 else 
                 {
@@ -48,9 +48,9 @@ public class Ally : MonoBehaviour
                 break;
             
             case State.Prep:
-                if(decisionTime>0)
+                if(pt>0)
 		{
-			prepTime-=Time.deltaTime*prepRate;
+			pt-=Time.deltaTime*prepRate;
 		}
                 else 
                 {
