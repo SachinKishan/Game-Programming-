@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Generator : MonoBehaviour
 {
-    [SerializeField] GameObject Dungeon;
+    [SerializeField] GameObject dungeon;
 
 
     // Start is called before the first frame update
@@ -19,19 +19,18 @@ public class Generator : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space))
         {
             InstantiateDungeon();
-            PickRandomNumber(10);
         }
     }
 
     private void InstantiateDungeon()
     {
-        Instantiate(Dungeon);
+        GameObject d=Instantiate(dungeon);
+        d.GetComponent<Dungeon>().SetNumber(PickRandomNumber(10));
     }
 
-    private void PickRandomNumber(int maxInt)
+    private int PickRandomNumber(int maxInt)
     {
-        int randomNum = Random.Range(1,maxInt+1);
-        Debug.Log(randomNum);
+        return Random.Range(1, maxInt + 1);
     }
 
 }
