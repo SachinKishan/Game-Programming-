@@ -9,7 +9,7 @@ public enum State
 	Act
 };
 
-public class Ally : MonoBehaviour
+public class Ally : UnitBaseClass
 {
 
 	[SerializeField]State state=State.Idle;
@@ -43,6 +43,7 @@ public class Ally : MonoBehaviour
 		}
                 else 
                 {
+		    
                     SwitchToPrep();
                 }
                 break;
@@ -60,6 +61,7 @@ public class Ally : MonoBehaviour
             
             case State.Act://depends on animation, a constant for now 
                 SwitchToIdle();
+		
                 break;
         }
     }
@@ -73,17 +75,19 @@ public class Ally : MonoBehaviour
 
     public void SwitchToPrep()
     {
+	//call ai to choose which ability
 	pt=prepTime;
-        
         Debug.Log("Decision made, prepping move");
         state = State.Prep;
     }
 
     public void SwitchToAct()
     {
+	Debug.Log("Prep complete, performing action");
+	//activate selected ability, just use some number ability number as chosen by ai. 
         //ability.Activate(gameObject);
         state = State.Act;
-	Debug.Log("Prep complete, performing action");
+	
     }
   
 }

@@ -5,7 +5,8 @@ using UnityEngine;
 public class UnitBaseClass : MonoBehaviour
 {
 	[SerializeField]int health;
-	[SerializeField]string name;
+	[SerializeField]string unitName;
+	[SerializeField]Ability[] abilities;
     // Start is called before the first frame update
     void Start()
     {
