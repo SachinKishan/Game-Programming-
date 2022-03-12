@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerDungeonTravel : MonoBehaviour
 {
 	[SerializeField]GameObject currentDungeon;
+	bool canMove=true;
 	
     // Start is called before the first frame update
     void Start()
@@ -21,7 +22,7 @@ public class PlayerDungeonTravel : MonoBehaviour
 
 	void PlayerInput()
 	{
-		 if(Input.GetKeyDown(KeyCode.Space))
+		 if(Input.GetKeyDown(KeyCode.Space)&&canMove)
         	{
             		Generator.main.InstantiateDungeon();
 			currentDungeon=Generator.main.currentDungeon;
@@ -31,6 +32,7 @@ public class PlayerDungeonTravel : MonoBehaviour
 
     IEnumerator LerpPosition(Vector2 targetPosition, float duration)
     {
+	canMove=false;
         float time = 0;
         Vector2 startPosition = transform.position;
 
@@ -40,7 +42,7 @@ public class PlayerDungeonTravel : MonoBehaviour
             time += Time.deltaTime;
             yield return null;
         }
-        
+	canMove=true;        
         transform.position = targetPosition;
     }
 }
