@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class PlayerDungeonTravel : MonoBehaviour
 {
-	[SerializeField]GameObject startDungeon;
-	Dungeon d;
+	[SerializeField]GameObject currentDungeon;
+	
     // Start is called before the first frame update
     void Start()
     {
-	d=startDungeon.GetComponent<Dungeon>();        
-	d.PlayerIsHere();
+	
+	
     }
 
     // Update is called once per frame
@@ -21,24 +21,26 @@ public class PlayerDungeonTravel : MonoBehaviour
 
 	void PlayerInput()
 	{
-		if(Input.GetKeyDown(KeyCode.DownArrow))
-		{
-			d=d.down.GetComponent<Dungeon>();        ;		
-			
-		}
-		else if(Input.GetKeyDown(KeyCode.UpArrow))
-		{
-			d=d.up.GetComponent<Dungeon>();        ;
-		}
-		else if(Input.GetKeyDown(KeyCode.RightArrow))
-		{
-			d=d.right.GetComponent<Dungeon>();        ;
-		}
-		else if(Input.GetKeyDown(KeyCode.LeftArrow))
-		{
-			d=d.left.GetComponent<Dungeon>();        ;
-		}
-		d.PlayerIsHere();
-		
+		 if(Input.GetKeyDown(KeyCode.Space))
+        	{
+            		Generator.main.InstantiateDungeon();
+			currentDungeon=Generator.main.currentDungeon;
+			StartCoroutine(LerpPosition(currentDungeon.transform.position,1f));
+        	}
 	}
+
+    IEnumerator LerpPosition(Vector2 targetPosition, float duration)
+    {
+        float time = 0;
+        Vector2 startPosition = transform.position;
+
+        while (time < duration)
+        {
+            transform.position = Vector2.Lerp(startPosition,new Vector2(targetPosition.x,targetPosition.y), time / duration);
+            time += Time.deltaTime;
+            yield return null;
+        }
+        
+        transform.position = targetPosition;
+    }
 }

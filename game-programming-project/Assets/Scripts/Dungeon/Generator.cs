@@ -5,7 +5,7 @@ using UnityEngine;
 public class Generator : MonoBehaviour
 {
     [SerializeField] GameObject dungeon;
-//    public List<Gameobject> dungeonList;
+    public GameObject currentDungeon;
     public static Generator main;
     
 	
@@ -22,16 +22,15 @@ public class Generator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            InstantiateDungeon();
-        }
+        
     }
 
-    private void InstantiateDungeon()
+    public void InstantiateDungeon()
     {
-        GameObject d=Instantiate(dungeon);
+        GameObject d=Instantiate(dungeon,currentDungeon.transform);
+	d.transform.localPosition=new Vector2(0f,1f);
         d.GetComponent<Dungeon>().SetNumber(PickRandomNumber(10));
+	currentDungeon=d;
     }
 
     private int PickRandomNumber(int maxInt)
@@ -39,12 +38,6 @@ public class Generator : MonoBehaviour
         return Random.Range(1, maxInt + 1);
     }
 
-    public void CreateDungeons(Dungeon dc)
-    {
-	if(dc.right==null)dc.right=Instantiate(dungeon,dc.gameObject.transform);
-	if(dc.down==null)dc.down=Instantiate(dungeon,dc.gameObject.transform);
-	if(dc.up==null)dc.up=Instantiate(dungeon,dc.gameObject.transform);
-	if(dc.left==null)dc.left=Instantiate(dungeon,dc.gameObject.transform);
-    }
+  
 
 }
