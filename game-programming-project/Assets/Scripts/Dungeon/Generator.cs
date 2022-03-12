@@ -41,10 +41,10 @@ public class Generator : MonoBehaviour
 
     public void CreateDungeons(Dungeon dc)
     {
-	dc.right=Instantiate(dungeon);
-	dc.down=Instantiate(dungeon);
-	dc.up=Instantiate(dungeon);
-	dc.left=Instantiate(dungeon);
+	if(dc.right==null)dc.right=Instantiate(dungeon,dc.gameObject.transform);
+	if(dc.down==null)dc.down=Instantiate(dungeon,dc.gameObject.transform);
+	if(dc.up==null)dc.up=Instantiate(dungeon,dc.gameObject.transform);
+	if(dc.left==null)dc.left=Instantiate(dungeon,dc.gameObject.transform);
     }
 
 }

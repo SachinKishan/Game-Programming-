@@ -10,7 +10,7 @@ public class Dungeon : MonoBehaviour
 	public GameObject left;
 	public GameObject up;
 	public GameObject down;	
-	bool created=false;	
+	public bool created=false;	
     
     public void SetNumber(int num)
     {
@@ -18,10 +18,14 @@ public class Dungeon : MonoBehaviour
     }
     public void PlayerIsHere()
     {
-	if(!created)
+	if(created==false)
 	{
 		created=true;
 		Generator.main.CreateDungeons(this);
+		if(right!=null)right.GetComponent<Dungeon>().left=this.gameObject;
+		if(down!=null)down.GetComponent<Dungeon>().up=this.gameObject;
+		if(left!=null)left.GetComponent<Dungeon>().right=this.gameObject;
+		if(up!=null)up.GetComponent<Dungeon>().down=this.gameObject;
 		
     	}
     }
