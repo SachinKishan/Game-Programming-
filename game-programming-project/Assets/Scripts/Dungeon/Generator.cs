@@ -5,12 +5,18 @@ using UnityEngine;
 public class Generator : MonoBehaviour
 {
     [SerializeField] GameObject dungeon;
-
-
-    // Start is called before the first frame update
+//    public List<Gameobject> dungeonList;
+    public static Generator main;
+    
+	
+    void Awake()
+    {
+	main=this;
+    }
+	// Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -31,6 +37,14 @@ public class Generator : MonoBehaviour
     private int PickRandomNumber(int maxInt)
     {
         return Random.Range(1, maxInt + 1);
+    }
+
+    public void CreateDungeons(Dungeon dc)
+    {
+	dc.right=Instantiate(dungeon);
+	dc.down=Instantiate(dungeon);
+	dc.up=Instantiate(dungeon);
+	dc.left=Instantiate(dungeon);
     }
 
 }
