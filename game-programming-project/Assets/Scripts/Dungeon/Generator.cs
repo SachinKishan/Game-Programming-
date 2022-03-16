@@ -29,7 +29,7 @@ public class Generator : MonoBehaviour
     {
         GameObject d=Instantiate(dungeon,currentDungeon.transform);
 	d.transform.localPosition=new Vector2(0f,1f);
-        d.GetComponent<Dungeon>().SetNumber(PickRandomNumber(10));
+       // d.GetComponent<Dungeon>().SetNumber(PickRandomNumber(10));
 	currentDungeon=d;
     }
 

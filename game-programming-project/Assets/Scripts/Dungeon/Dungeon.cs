@@ -2,19 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum CreatedBy
+public enum Scenario
 {
-	up,down,left,right
+    Battle,
+    Treasure,
+    Nothing,
+    Saferoom
 };
+
 public class Dungeon : MonoBehaviour
 {
-    [SerializeField] int number;
-	
-    public void SetNumber(int num)
+    [SerializeField] Scenario sc;
+
+    private void Start()
     {
-        number=num;
+        SetScenario();
+        Debug.Log(sc);
     }
-   
-    
-    
+
+    void SetScenario()
+    {
+        sc = (Scenario)Random.Range(0, 3);
+        
+        UIManager.main.UpdateDungeonHeader(sc);
+
+    }
+
 }
