@@ -6,7 +6,8 @@ public class UIManager : MonoBehaviour
 {
     public TMP_Text dungeonHeader;
     public static UIManager main;
-
+    public GameObject informationPanel;
+    public TMP_Text informationText;
     private void Awake()
     {
         main = this;
@@ -22,6 +23,17 @@ public class UIManager : MonoBehaviour
     {
         
     }
+    public void ToggleInformationPanel(bool active)
+    {
+        informationPanel.SetActive(active);
+    }
+    public void SetInformationPanelText(string text)
+    {
+        informationText.text = text;
+        ToggleInformationPanel(true);
+        
+    }
+
 
     public void UpdateDungeonHeader(Scenario sc)
     {

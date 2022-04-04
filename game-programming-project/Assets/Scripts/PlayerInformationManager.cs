@@ -9,6 +9,12 @@ public class PlayerInformationManager : MonoBehaviour
     
     int currentHealth;
     [SerializeField] int monies = 0;
+    public static PlayerInformationManager main;
+
+    private void Awake()
+    {
+        main = this;
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +41,9 @@ public class PlayerInformationManager : MonoBehaviour
     {
         currentHealth -= reduction;
     }
+
+    public int GetCurrentHealth() { return currentHealth; }
+    public int GetMaxHealth() { return baseHealth; }
 
     public void AddMoney(int m)
     {

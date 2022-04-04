@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UnitBaseClass : MonoBehaviour
+public class BattleInformationHolder : MonoBehaviour
 {
-	[SerializeField]int health;
-	[SerializeField]string unitName;
-	[SerializeField]public Ability[] abilities;
+    public UnitBaseClass target;
+    public static BattleInformationHolder main;
+    
+    private void Awake()
+    {
+        main = this;
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -17,10 +21,5 @@ public class UnitBaseClass : MonoBehaviour
     void Update()
     {
         
-    }
-
-    public void RemoveHealth(int h)
-    {
-        health -= h;
     }
 }

@@ -12,4 +12,8 @@ public class Ability : ScriptableObject
 	{
 		Debug.Log(name+ " activated");
 	}
+	public virtual void Activate(UnitBaseClass a)
+    {
+
+    }
 }
