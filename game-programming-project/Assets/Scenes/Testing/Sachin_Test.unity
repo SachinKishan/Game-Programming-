@@ -583,11 +583,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1974586523, guid: d6eff88d99c562543bc482760cbf4d0c, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1974586523, guid: d6eff88d99c562543bc482760cbf4d0c, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3456655633500460939, guid: d6eff88d99c562543bc482760cbf4d0c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -695,7 +695,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3456655635264099837, guid: d6eff88d99c562543bc482760cbf4d0c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3456655635374582380, guid: d6eff88d99c562543bc482760cbf4d0c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -714,6 +714,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4877394224298078448, guid: e86d5f9a1846b5e469e433c4d3889db4, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877394224298078448, guid: e86d5f9a1846b5e469e433c4d3889db4, type: 3}
+      propertyPath: m_Size.y
+      value: 1.4375
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877394224298078448, guid: e86d5f9a1846b5e469e433c4d3889db4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2880395667549103098, guid: 6f3bc0b2501518a4a88cf9de79a9654a, type: 3}
+    - target: {fileID: 4877394224298078448, guid: e86d5f9a1846b5e469e433c4d3889db4, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877394224298078449, guid: e86d5f9a1846b5e469e433c4d3889db4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877394224298078449, guid: e86d5f9a1846b5e469e433c4d3889db4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4877394224967523586, guid: e86d5f9a1846b5e469e433c4d3889db4, type: 3}
       propertyPath: slider
       value: 

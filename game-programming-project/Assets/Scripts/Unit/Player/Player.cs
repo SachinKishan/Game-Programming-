@@ -17,10 +17,12 @@ public class Player : UnitBaseClass
     private float pt;
     public Button[] buttons; 
     Ability currentAbility;
+    Animator a;
     // Start is called before the first frame update
     void Start()
     {
-        abilityPanel.SetActive(false);
+        a = GetComponent<Animator>();
+        abilityPanel.SetActive(true);
         SwitchToIdle();
         SetButtons();
         pt = prepTime;
@@ -57,7 +59,7 @@ public class Player : UnitBaseClass
     }
     public void SwitchToIdle()
     {
-        abilityPanel.SetActive(true);
+        //abilityPanel.SetActive(true);
         
         state = State.Idle;
         Debug.Log("IDLE");
@@ -68,6 +70,8 @@ public class Player : UnitBaseClass
        
         pt = currentAbility.cooldownTime;
         Debug.Log("PREP");
+        if (currentAbility.type == AbilityType.magic) a.SetTrigger("casting");
+        else if (currentAbility.type == AbilityType.skill) a.SetTrigger("prep");
         state = State.Prep;
     }
 
@@ -75,9 +79,15 @@ public class Player : UnitBaseClass
     {
         Debug.Log("ACT");
         currentAbility.Activate(BattleInformationHolder.main.target);
-        
+        if (currentAbility.type == AbilityType.magic) a.SetTrigger("cast");
+        else if (currentAbility.type == AbilityType.skill) a.SetTrigger("act");
         state = State.Act;
 
+    }
+
+    public void GetPanel()
+    {
+        abilityPanel.SetActive(true);
     }
 
     public void SetAbility(int  a)
