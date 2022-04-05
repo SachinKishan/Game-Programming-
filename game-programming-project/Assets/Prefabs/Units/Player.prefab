@@ -136,10 +136,9 @@ MonoBehaviour:
   prepRate: 1
   decisionRate: 1
   abilityPanel: {fileID: 0}
+  slider: {fileID: 0}
   prepTime: 4
   buttons:
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

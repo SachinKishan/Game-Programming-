@@ -9,6 +9,7 @@ public class Player : UnitBaseClass
     [SerializeField] float decisionRate = 1;
 
     [SerializeField]GameObject abilityPanel;
+    [SerializeField] Slider slider;
 
     
     [SerializeField] float prepTime = 4;
@@ -39,6 +40,7 @@ public class Player : UnitBaseClass
             case State.Prep:
                 if (pt > 0)
                 {
+                    slider.value = (currentAbility.cooldownTime - pt)/currentAbility.cooldownTime * 100;
                     pt -= Time.deltaTime * prepRate;
                 }
                 else
