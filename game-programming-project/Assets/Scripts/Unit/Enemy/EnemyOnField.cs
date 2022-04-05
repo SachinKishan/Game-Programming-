@@ -10,13 +10,14 @@ public class EnemyOnField : UnitBaseClass
     [SerializeField] float decisionRate = 1;
     [SerializeField] float decisionTime = 6;
     [SerializeField] float prepTime = 4;
-
+    public GameObject pointer;
     private float dt;
     private float pt;
 
     // Start is called before the first frame update
     void Start()
     {
+        pointer.SetActive(false);
         pt = prepTime;
         dt = decisionTime;
     }
@@ -82,6 +83,6 @@ public class EnemyOnField : UnitBaseClass
 
     private void OnMouseDown()
     {
-        BattleInformationHolder.main.target = this.gameObject.GetComponent<UnitBaseClass>();
+        BattleInformationHolder.main.NewTarget(this);
     }
 }

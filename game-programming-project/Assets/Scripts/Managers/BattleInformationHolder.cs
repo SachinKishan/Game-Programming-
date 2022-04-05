@@ -5,7 +5,7 @@ using UnityEditor.UI;
 using UnityEngine.UI;
 public class BattleInformationHolder : MonoBehaviour
 {
-    public UnitBaseClass target;
+    public EnemyOnField target;
     public static BattleInformationHolder main;
     
     private void Awake()
@@ -15,7 +15,7 @@ public class BattleInformationHolder : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
+        NewTarget(FindObjectOfType<EnemyOnField>());
     }
 
     // Update is called once per frame
@@ -23,4 +23,12 @@ public class BattleInformationHolder : MonoBehaviour
     {
         
     }
+
+    public void NewTarget(EnemyOnField t)
+    {
+        if(target)target.pointer.SetActive(false);
+        target = t;
+        t.pointer.SetActive(true);
+    }
+        
 }

@@ -74,7 +74,7 @@ public class Player : UnitBaseClass
     public void SwitchToAct()
     {
         Debug.Log("ACT");
-        currentAbility.Activate();
+        currentAbility.Activate(BattleInformationHolder.main.target);
         
         state = State.Act;
 
