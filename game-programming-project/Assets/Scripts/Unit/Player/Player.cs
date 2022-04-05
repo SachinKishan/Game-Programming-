@@ -1,26 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Player : UnitBaseClass
 {
     [SerializeField] State state = State.Idle;
     [SerializeField] float prepRate = 1;
     [SerializeField] float decisionRate = 1;
 
-    //[SerializeField]private Skill skill;
+    [SerializeField]GameObject abilityPanel;
 
-    [SerializeField] float decisionTime = 6;
+    
     [SerializeField] float prepTime = 4;
 
-    private float dt;
     private float pt;
+    public Button[] buttons; 
     Ability currentAbility;
     // Start is called before the first frame update
     void Start()
     {
+        abilityPanel.SetActive(false);
+        SwitchToIdle();
+        SetButtons();
         pt = prepTime;
-        dt = decisionTime;
+        
     }
 
     // Update is called once per frame
@@ -52,8 +55,8 @@ public class Player : UnitBaseClass
     }
     public void SwitchToIdle()
     {
-
-        dt = decisionTime;
+        abilityPanel.SetActive(true);
+        
         state = State.Idle;
         Debug.Log("IDLE");
     }
@@ -70,15 +73,33 @@ public class Player : UnitBaseClass
     {
         Debug.Log("ACT");
         currentAbility.Activate();
-        //activate selected ability, just use some number ability number as chosen by ai. 
-        //ability.Activate(gameObject);
+        
         state = State.Act;
 
     }
 
-    public void SetAbility(Ability a)
+    public void SetAbility(int  a)
     {
-        currentAbility = a;
+        Debug.Log(a);
+        currentAbility = abilities[a];
         SwitchToPrep();
+        abilityPanel.SetActive(false);
+    }
+
+    void SetButtons()
+    {
+        for(int i=0;i<buttons.Length;i++)
+        {
+            
+                if (i < abilities.Length)
+                {
+                    buttons[i].GetComponentInChildren<TMPro.TMP_Text>().text = abilities[i].abilityName;
+                  
+                }
+                else
+                {
+                    buttons[i].gameObject.SetActive(false);
+                }
+        }
     }
 }
