@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Attack Ability
   m_EditorClassIdentifier: 
   abilityName: Attack
-  cooldownTime: 4
+  cooldownTime: 1
   activeTime: 0
   attack: 2
