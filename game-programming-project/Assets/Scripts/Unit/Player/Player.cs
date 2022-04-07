@@ -9,7 +9,8 @@ public class Player : UnitBaseClass
     [SerializeField] float decisionRate = 1;
 
     [SerializeField]GameObject abilityPanel;
-    [SerializeField] Slider slider;
+    [SerializeField] Slider actionSlider;
+    [SerializeField] Slider healthSlider;
 
     
     [SerializeField] float prepTime = 4;
@@ -21,6 +22,9 @@ public class Player : UnitBaseClass
     // Start is called before the first frame update
     void Start()
     {
+        currentHealth = health;
+        UpdateHealthBar();
+
         a = GetComponent<Animator>();
         abilityPanel.SetActive(true);
         SwitchToIdle();
@@ -42,7 +46,7 @@ public class Player : UnitBaseClass
             case State.Prep:
                 if (pt > 0)
                 {
-                    slider.value = (currentAbility.cooldownTime - pt)/currentAbility.cooldownTime * 100;
+                    actionSlider.value = (currentAbility.cooldownTime - pt)/currentAbility.cooldownTime * 100;
                     pt -= Time.deltaTime * prepRate;
                 }
                 else
@@ -62,14 +66,14 @@ public class Player : UnitBaseClass
         //abilityPanel.SetActive(true);
         
         state = State.Idle;
-        Debug.Log("IDLE");
+        //Debug.Log("IDLE");
     }
 
     public void SwitchToPrep()
     {
        
         pt = currentAbility.cooldownTime;
-        Debug.Log("PREP");
+        //Debug.Log("PREP");
         if (currentAbility.type == AbilityType.magic) a.SetTrigger("casting");
         else if (currentAbility.type == AbilityType.skill) a.SetTrigger("prep");
         state = State.Prep;
@@ -77,8 +81,8 @@ public class Player : UnitBaseClass
 
     public void SwitchToAct()
     {
-        Debug.Log("ACT");
-        currentAbility.Activate(BattleInformationHolder.main.target);
+        //Debug.Log("ACT");
+       
         if (currentAbility.type == AbilityType.magic) a.SetTrigger("cast");
         else if (currentAbility.type == AbilityType.skill) a.SetTrigger("act");
         state = State.Act;
@@ -92,7 +96,7 @@ public class Player : UnitBaseClass
 
     public void SetAbility(int  a)
     {
-        Debug.Log(a);
+        //Debug.Log(a);
         currentAbility = abilities[a];
         SwitchToPrep();
         abilityPanel.SetActive(false);
@@ -113,5 +117,27 @@ public class Player : UnitBaseClass
                     buttons[i].gameObject.SetActive(false);
                 }
         }
+    }
+
+    public override void RemoveHealth(int h)
+    {
+        base.RemoveHealth(h);
+        if(currentHealth<=0)
+        {
+            currentHealth = 0;
+            BattleInformationHolder.main.SubtractPlayer();
+        }
+        UpdateHealthBar();
+
+    }
+
+    public void ActivateAbility()
+    {
+        currentAbility.Activate(BattleInformationHolder.main.target);
+    }
+
+    void UpdateHealthBar()
+    {
+        healthSlider.value = (int)(((float)currentHealth / (float)health) * 100);
     }
 }

@@ -15,4 +15,6 @@ MonoBehaviour:
   abilityName: Attack
   cooldownTime: 1
   activeTime: 0
-  attack: 2
+  type: 0
+  attack: 10
+  particle: {fileID: 259493355278092612, guid: 0c15fb4357839fe4ab1233131ca86270, type: 3}

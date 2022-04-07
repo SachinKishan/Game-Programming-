@@ -71,15 +71,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 2880395667549103098, guid: 6f3bc0b2501518a4a88cf9de79a9654a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.4375}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &4877394224967523587
@@ -92,6 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4877394224967523589}
   - component: {fileID: 4877394224967523586}
+  - component: {fileID: 841966452}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -127,6 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  currentHealth: 0
   unitName: Player
   abilities:
   - {fileID: 11400000, guid: 77260ba2d4df2a14b9847d1638714c6d, type: 2}
@@ -136,7 +138,8 @@ MonoBehaviour:
   prepRate: 1
   decisionRate: 1
   abilityPanel: {fileID: 0}
-  slider: {fileID: 0}
+  actionSlider: {fileID: 0}
+  healthSlider: {fileID: 0}
   prepTime: 4
   buttons:
   - {fileID: 0}
@@ -145,3 +148,22 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+--- !u!95 &841966452
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4877394224967523587}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: 2b580a7bb88d4c540a4c9b3591dc7bb0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -10,6 +10,7 @@ public class SceneManager : MonoBehaviour
 
     private void Awake()
     {
+        DontDestroyOnLoad(this.gameObject);
         main = this;
     }
 
@@ -17,5 +18,15 @@ public class SceneManager : MonoBehaviour
     {
         //Load the scene with a build index
         UnityEngine.SceneManagement.SceneManager.LoadScene(bIndex);
+    }
+
+    public void AddScene(int bIndex)
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(bIndex, LoadSceneMode.Additive);
+    }
+
+    public void RemoveScene(int bIndex)
+    {
+        UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(bIndex);
     }
 }

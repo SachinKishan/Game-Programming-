@@ -44,3 +44,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  enemies: []
+  players: []
+  ecount: 0
+  pcount: 0
+  winPanel: {fileID: 0}
+  losePanel: {fileID: 0}
+  abilityPanel: {fileID: 0}

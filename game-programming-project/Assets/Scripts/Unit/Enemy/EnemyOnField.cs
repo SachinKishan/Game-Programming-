@@ -17,6 +17,8 @@ public class EnemyOnField : UnitBaseClass
     // Start is called before the first frame update
     void Start()
     {
+
+        currentHealth = health;
         pointer.SetActive(false);
         pt = prepTime;
         dt = decisionTime;
@@ -61,20 +63,20 @@ public class EnemyOnField : UnitBaseClass
 
         dt = decisionTime;
         state = State.Idle;
-        Debug.Log("act performed");
+        //Debug.Log("act performed");
     }
 
     public void SwitchToPrep()
     {
         //call ai to choose which ability
         pt = prepTime;
-        Debug.Log("Decision made, prepping move");
+        //Debug.Log("Decision made, prepping move");
         state = State.Prep;
     }
 
     public void SwitchToAct()
     {
-        Debug.Log("Prep complete, performing action");
+        //Debug.Log("Prep complete, performing action");
         //activate selected ability, just use some number ability number as chosen by ai. 
         abilities[0].Activate(player);
         state = State.Act;
@@ -84,5 +86,16 @@ public class EnemyOnField : UnitBaseClass
     private void OnMouseDown()
     {
         BattleInformationHolder.main.NewTarget(this);
+    }
+
+    public override void RemoveHealth(int h)
+    {
+        base.RemoveHealth(h);
+        if(currentHealth<=0)
+        {
+
+            BattleInformationHolder.main.SubtractEnemy();
+            gameObject.SetActive(false);
+        }
     }
 }

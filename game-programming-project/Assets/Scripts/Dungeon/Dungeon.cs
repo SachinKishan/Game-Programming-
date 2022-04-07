@@ -17,12 +17,13 @@ public class Dungeon : MonoBehaviour
     private void Start()
     {
         SetScenario();
+        PlayerInformationManager.main.AddDungeonNumber();
         Debug.Log(sc);
     }
 
     void SetScenario()
     {
-        sc = (Scenario)Random.Range(0, 3);
+        sc = (Scenario)Random.Range(0, 4);
         
         UIManager.main.UpdateDungeonHeader(sc);
         if(sc==Scenario.Battle)
@@ -47,11 +48,13 @@ public class Dungeon : MonoBehaviour
     {
         //call battle scene
         UIManager.main.SetInformationPanelText("Enemy encounter!");
+        
     }
 
     void Treasure()
     {
         UIManager.main.SetInformationPanelText("You've found treasure!");
+        PlayerInformationManager.main.AddMoney(100);
         //collect treasure, gives a stat buff in some form
         //add money? we need to create a function for this
     }

@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Final Game Scenes/StartScreen.unity
+    guid: c7f79b5063f7d9e4ca32506945778b6f
+  - enabled: 1
+    path: Assets/Scenes/Final Game Scenes/DungeonTravel.unity
+    guid: de350f51d1fdc1a4daedaec86372b729
+  - enabled: 1
+    path: Assets/Scenes/Final Game Scenes/Loss.unity
+    guid: 43aa7afb784a80740bfc269287d6db8c
+  - enabled: 1
+    path: Assets/Scenes/Final Game Scenes/Battle.unity
+    guid: 67c208889979c0e46ac1d72d55484dbd
   m_configObjects: {}

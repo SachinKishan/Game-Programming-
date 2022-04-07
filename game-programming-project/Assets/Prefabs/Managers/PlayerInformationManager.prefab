@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6689446672703063076
+--- !u!1 &3479224659607346569
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,42 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6689446672703063075}
-  - component: {fileID: 6689446672703063074}
+  - component: {fileID: 3479224659607346568}
+  - component: {fileID: 3479224659607346567}
   m_Layer: 0
-  m_Name: UIManager
+  m_Name: PlayerInformationManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6689446672703063075
+--- !u!4 &3479224659607346568
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6689446672703063076}
+  m_GameObject: {fileID: 3479224659607346569}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 365.5, y: 177.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6689446672703063074
+--- !u!114 &3479224659607346567
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6689446672703063076}
+  m_GameObject: {fileID: 3479224659607346569}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd7408754be774b4f918aa678b56f147, type: 3}
+  m_Script: {fileID: 11500000, guid: d92c195514540dc49a39ff86667b72f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dungeonHeader: {fileID: 0}
-  informationPanel: {fileID: 0}
-  informationText: {fileID: 0}
-  battleButton: {fileID: 0}
+  baseHealth: 0
+  monies: 0
