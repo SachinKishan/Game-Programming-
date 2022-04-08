@@ -1,7 +1,97 @@
 fileFormatVersion: 2
 guid: 340a9480f3c39a34094166e84e8fedd9
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4892590206628606932
+    second: Attack - SpriteSheet 5x6_0
+  - first:
+      213: 5078572518950497782
+    second: Attack - SpriteSheet 5x6_1
+  - first:
+      213: -4930690041561322919
+    second: Attack - SpriteSheet 5x6_2
+  - first:
+      213: 8381181837820720919
+    second: Attack - SpriteSheet 5x6_3
+  - first:
+      213: -2868453179069655593
+    second: Attack - SpriteSheet 5x6_4
+  - first:
+      213: -759607662570849410
+    second: Attack - SpriteSheet 5x6_5
+  - first:
+      213: -641872859648806161
+    second: Attack - SpriteSheet 5x6_6
+  - first:
+      213: 4334312079252852272
+    second: Attack - SpriteSheet 5x6_7
+  - first:
+      213: -5554357651992115272
+    second: Attack - SpriteSheet 5x6_8
+  - first:
+      213: -3709941050483942376
+    second: Attack - SpriteSheet 5x6_9
+  - first:
+      213: 4887133307886821823
+    second: Attack - SpriteSheet 5x6_10
+  - first:
+      213: -2441938091959522812
+    second: Attack - SpriteSheet 5x6_11
+  - first:
+      213: -5017692168845782283
+    second: Attack - SpriteSheet 5x6_12
+  - first:
+      213: 1371780885141393129
+    second: Attack - SpriteSheet 5x6_13
+  - first:
+      213: 1623218669426871227
+    second: Attack - SpriteSheet 5x6_14
+  - first:
+      213: -1260219659583446904
+    second: Attack - SpriteSheet 5x6_15
+  - first:
+      213: 7040856714526309092
+    second: Attack - SpriteSheet 5x6_16
+  - first:
+      213: -1771783102340416560
+    second: Attack - SpriteSheet 5x6_17
+  - first:
+      213: -7372317988440172365
+    second: Attack - SpriteSheet 5x6_18
+  - first:
+      213: -3139405058361971133
+    second: Attack - SpriteSheet 5x6_19
+  - first:
+      213: 1536053235636477761
+    second: Attack - SpriteSheet 5x6_20
+  - first:
+      213: -4561549916006243715
+    second: Attack - SpriteSheet 5x6_21
+  - first:
+      213: 8753882299331406205
+    second: Attack - SpriteSheet 5x6_22
+  - first:
+      213: -4174052214012220139
+    second: Attack - SpriteSheet 5x6_23
+  - first:
+      213: 2677720052973283111
+    second: Attack - SpriteSheet 5x6_24
+  - first:
+      213: 8884095731138357370
+    second: Attack - SpriteSheet 5x6_25
+  - first:
+      213: -6167421997464975582
+    second: Attack - SpriteSheet 5x6_26
+  - first:
+      213: -6190887426511894072
+    second: Attack - SpriteSheet 5x6_27
+  - first:
+      213: -150459696496795228
+    second: Attack - SpriteSheet 5x6_28
+  - first:
+      213: -5113434122053352174
+    second: Attack - SpriteSheet 5x6_29
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +131,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +165,651 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Attack - SpriteSheet 5x6_0
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 5363
+        width: 413
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d337a1fed8f5e340800000000000000
+      internalID: 4892590206628606932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack - SpriteSheet 5x6_1
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 5363
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fdea1e6cc6ba7640800000000000000
+      internalID: 5078572518950497782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack - SpriteSheet 5x6_2
+      rect:
+        serializedVersion: 2
+        x: 2258
+        y: 5363
+        width: 388
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95a6e27f78ba29bb0800000000000000
+      internalID: -4930690041561322919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack - SpriteSheet 5x6_3
+      rect:
+        serializedVersion: 2
+        x: 3269
+        y: 5363
+        width: 376
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7177241e970ff4470800000000000000
+      internalID: 8381181837820720919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack - SpriteSheet 5x6_4
+      rect:
+        serializedVersion: 2
+        x: 4274
+        y: 5363
+        width: 373
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d596b608053138d0800000000000000
+      internalID: -2868453179069655593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack - SpriteSheet 5x6_5
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 4364
+        width: 373
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7bbccffad45575f0800000000000000
+      internalID: -759607662570849410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack - SpriteSheet 5x6_6
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 4364
+        width: 373
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe23ba1f80c9717f0800000000000000
+      internalID: -641872859648806161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack - SpriteSheet 5x6_7
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 4364
+        width: 399
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03e0d853fd1962c30800000000000000
+      internalID: 4334312079252852272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack - SpriteSheet 5x6_8
+      rect:
+        serializedVersion: 2
+        x: 3183
+        y: 4364
+        width: 471
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b7898dc425fae2b0800000000000000
+      internalID: -5554357651992115272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack - SpriteSheet 5x6_9
+      rect:
+        serializedVersion: 2
+        x: 4123
+        y: 4364
+        width: 536
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81cd34c4544a38cc0800000000000000
+      internalID: -3709941050483942376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack - SpriteSheet 5x6_10
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 3362
+        width: 587
+        height: 366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1e292b9d592d340800000000000000
+      internalID: 4887133307886821823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack - SpriteSheet 5x6_11
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 3362
+        width: 587
+        height: 366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ae1494e3e7c1ed0800000000000000
+      internalID: -2441938091959522812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack - SpriteSheet 5x6_12
+      rect:
+        serializedVersion: 2
+        x: 2073
+        y: 3362
+        width: 585
+        height: 366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f210bbae839d5ab0800000000000000
+      internalID: -5017692168845782283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack - SpriteSheet 5x6_13
+      rect:
+        serializedVersion: 2
+        x: 3073
+        y: 3362
+        width: 587
+        height: 366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ee0680727b890310800000000000000
+      internalID: 1371780885141393129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack - SpriteSheet 5x6_14
+      rect:
+        serializedVersion: 2
+        x: 4357
+        y: 3368
+        width: 307
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbb88f797c4d68610800000000000000
+      internalID: 1623218669426871227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack - SpriteSheet 5x6_15
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 2323
+        width: 287
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 880a09385ecc28ee0800000000000000
+      internalID: -1260219659583446904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack - SpriteSheet 5x6_16
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 2303
+        width: 242
+        height: 373
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eab3c7b0e526b160800000000000000
+      internalID: 7040856714526309092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack - SpriteSheet 5x6_17
+      rect:
+        serializedVersion: 2
+        x: 2453
+        y: 2306
+        width: 242
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dbb5fdd7ac5967e0800000000000000
+      internalID: -1771783102340416560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack - SpriteSheet 5x6_18
+      rect:
+        serializedVersion: 2
+        x: 3452
+        y: 2305
+        width: 237
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b81dc789d340b990800000000000000
+      internalID: -7372317988440172365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack - SpriteSheet 5x6_19
+      rect:
+        serializedVersion: 2
+        x: 4451
+        y: 2303
+        width: 232
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e25429bb79e64d0800000000000000
+      internalID: -3139405058361971133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack - SpriteSheet 5x6_20
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 1303
+        width: 228
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f933a8748215510800000000000000
+      internalID: 1536053235636477761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack - SpriteSheet 5x6_21
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1291
+        width: 219
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d722c3ff48e12b0c0800000000000000
+      internalID: -4561549916006243715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack - SpriteSheet 5x6_22
+      rect:
+        serializedVersion: 2
+        x: 2363
+        y: 1333
+        width: 273
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d796a3932990c7970800000000000000
+      internalID: 8753882299331406205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack - SpriteSheet 5x6_23
+      rect:
+        serializedVersion: 2
+        x: 3257
+        y: 1364
+        width: 382
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51d6edd50a9c216c0800000000000000
+      internalID: -4174052214012220139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack - SpriteSheet 5x6_24
+      rect:
+        serializedVersion: 2
+        x: 4233
+        y: 1364
+        width: 411
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 727a965733c292520800000000000000
+      internalID: 2677720052973283111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack - SpriteSheet 5x6_25
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 365
+        width: 413
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a78e01d5ff5aa4b70800000000000000
+      internalID: 8884095731138357370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack - SpriteSheet 5x6_26
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 365
+        width: 412
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2278b25ae5ae86aa0800000000000000
+      internalID: -6167421997464975582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack - SpriteSheet 5x6_27
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 365
+        width: 412
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c98352bfac851aa0800000000000000
+      internalID: -6190887426511894072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack - SpriteSheet 5x6_28
+      rect:
+        serializedVersion: 2
+        x: 3233
+        y: 365
+        width: 412
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a1ab4504b579edf0800000000000000
+      internalID: -150459696496795228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack - SpriteSheet 5x6_29
+      rect:
+        serializedVersion: 2
+        x: 4233
+        y: 365
+        width: 411
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21506a412ce6909b0800000000000000
+      internalID: -5113434122053352174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

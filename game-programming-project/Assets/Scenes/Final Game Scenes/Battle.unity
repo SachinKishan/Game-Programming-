@@ -130,6 +130,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 342885974512945417, guid: b9b879fb805fe40438f00efea21c4964, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 342885974512945417, guid: b9b879fb805fe40438f00efea21c4964, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 342885974512945417, guid: b9b879fb805fe40438f00efea21c4964, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 342885974512945417, guid: b9b879fb805fe40438f00efea21c4964, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 342885974512945417, guid: b9b879fb805fe40438f00efea21c4964, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 342885974512945418, guid: b9b879fb805fe40438f00efea21c4964, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 342885974512945418, guid: b9b879fb805fe40438f00efea21c4964, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4334312079252852272, guid: 340a9480f3c39a34094166e84e8fedd9, type: 3}
     - target: {fileID: 342885975969018850, guid: b9b879fb805fe40438f00efea21c4964, type: 3}
       propertyPath: m_Name
       value: Enemy (1)
@@ -182,6 +210,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 841966451}
+    - target: {fileID: 342885975969018861, guid: b9b879fb805fe40438f00efea21c4964, type: 3}
+      propertyPath: abilities.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 04a9d376a02e9c042b5ccacb063aabe4, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9b879fb805fe40438f00efea21c4964, type: 3}
 --- !u!1 &264091292 stripped
@@ -589,6 +621,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 841966451}
+    - target: {fileID: 342885975969018861, guid: b9b879fb805fe40438f00efea21c4964, type: 3}
+      propertyPath: abilities.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 17966d4749ea70842aa2cb4296f44971, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9b879fb805fe40438f00efea21c4964, type: 3}
 --- !u!1001 &3456655634280358472
@@ -759,6 +795,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4877394224967523586, guid: e86d5f9a1846b5e469e433c4d3889db4, type: 3}
+      propertyPath: state
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4877394224967523586, guid: e86d5f9a1846b5e469e433c4d3889db4, type: 3}
       propertyPath: abilityPanel
       value: 
