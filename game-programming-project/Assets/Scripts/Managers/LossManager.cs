@@ -16,5 +16,9 @@ public class LossManager : MonoBehaviour
         deepScore.text = "Number of rooms travelled: " + PlayerInformationManager.main.GetDungeonNumber();
     }
 
+    public void GoBackToStart()
+    {
+        SceneManager.main.Load(0);
+    }
     
 }

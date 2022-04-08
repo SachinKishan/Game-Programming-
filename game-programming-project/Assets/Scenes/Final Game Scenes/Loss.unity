@@ -727,10 +727,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SceneManager, Assembly-CSharp
-        m_MethodName: Load
-        m_Mode: 3
+      - m_Target: {fileID: 7476361007964487945}
+        m_TargetAssemblyTypeName: LossManager, Assembly-CSharp
+        m_MethodName: GoBackToStart
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1248,3 +1248,14 @@ PrefabInstance:
       objectReference: {fileID: 395371416}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc04a17850d23fe47aa6690152c30f59, type: 3}
+--- !u!114 &7476361007964487945 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8991389604749800771, guid: cc04a17850d23fe47aa6690152c30f59, type: 3}
+  m_PrefabInstance: {fileID: 7476361007964487944}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69fe8908c32aee6409bf9098af5ddc02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
