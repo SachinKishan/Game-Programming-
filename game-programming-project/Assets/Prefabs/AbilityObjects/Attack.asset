@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f9e94f47e99f5449a22f57670d8e2f4, type: 3}
-  m_Name: Attack Ability
+  m_Name: Attack
   m_EditorClassIdentifier: 
   abilityName: Attack
-  cooldownTime: 1
+  cooldownTime: 2
   activeTime: 0
   type: 0
   attack: 10

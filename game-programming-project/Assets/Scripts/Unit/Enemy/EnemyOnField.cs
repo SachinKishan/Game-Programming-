@@ -95,6 +95,7 @@ public class EnemyOnField : UnitBaseClass
         {
 
             BattleInformationHolder.main.SubtractEnemy();
+            BattleInformationHolder.main.SetNewEnemy(this);
             gameObject.SetActive(false);
         }
     }

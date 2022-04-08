@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 4877394224298078222}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_Children: []
   m_Father: {fileID: 4877394224967523589}
   m_RootOrder: 0
@@ -127,13 +127,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eebe71827da8b294db7c2b8129934367, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 50
   currentHealth: 0
   unitName: Player
   abilities:
+  - {fileID: 11400000, guid: 17966d4749ea70842aa2cb4296f44971, type: 2}
   - {fileID: 11400000, guid: 77260ba2d4df2a14b9847d1638714c6d, type: 2}
-  - {fileID: 11400000, guid: 220d98d03863ddd4faea3d4a922b114d, type: 2}
-  - {fileID: 11400000, guid: 220d98d03863ddd4faea3d4a922b114d, type: 2}
+  - {fileID: 11400000, guid: 04a9d376a02e9c042b5ccacb063aabe4, type: 2}
   state: 0
   prepRate: 1
   decisionRate: 1

@@ -78,4 +78,11 @@ public class BattleInformationHolder : MonoBehaviour
         SceneManager.main.Load(2);
     }
         
+    public void SetNewEnemy(EnemyOnField t)
+    {
+        for (int i = 0; i < enemies.Length; i++)
+        {
+            if (t != enemies[i]){ NewTarget(enemies[i]); break;}
+        }
+    }
 }
