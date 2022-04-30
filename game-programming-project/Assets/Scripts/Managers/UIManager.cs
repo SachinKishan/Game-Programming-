@@ -38,7 +38,7 @@ public class UIManager : MonoBehaviour
     }
     public void Battle()
     {
-        SceneManager.main.Load(3);
+        SceneManager.main.Load(Random.Range(3,9));
         battleButton.SetActive(false);
     }
 

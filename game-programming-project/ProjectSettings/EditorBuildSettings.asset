@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Final Game Scenes/Battle.unity
     guid: 67c208889979c0e46ac1d72d55484dbd
+  - enabled: 1
+    path: Assets/Scenes/Final Game Scenes/Battle 2.unity
+    guid: 718cf65b0cb17644b8f8164069f25e4d
+  - enabled: 1
+    path: Assets/Scenes/Final Game Scenes/Battle 1.unity
+    guid: c9a38d777cd3ad44e8a40d5507b63d6f
   m_configObjects: {}
