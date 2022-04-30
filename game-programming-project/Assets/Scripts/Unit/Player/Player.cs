@@ -126,6 +126,7 @@ public class Player : UnitBaseClass
         {
             currentHealth = 0;
             BattleInformationHolder.main.SubtractPlayer();
+            gameObject.SetActive(false);
         }
         UpdateHealthBar();
 

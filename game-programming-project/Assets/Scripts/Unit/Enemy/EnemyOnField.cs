@@ -78,6 +78,7 @@ public class EnemyOnField : UnitBaseClass
     {
         //Debug.Log("Prep complete, performing action");
         //activate selected ability, just use some number ability number as chosen by ai. 
+        player = FindObjectOfType<Player>();
         abilities[0].Activate(player);
         state = State.Act;
 
