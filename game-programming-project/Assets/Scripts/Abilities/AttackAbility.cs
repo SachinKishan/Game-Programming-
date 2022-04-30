@@ -10,9 +10,12 @@ public class AttackAbility : Ability
     public override void Activate(UnitBaseClass obj)
     {
         base.Activate();
-        obj.RemoveHealth(attack);
-        Transform t = obj.gameObject.transform;
+        if (obj != null)
+        {
+            obj.RemoveHealth(attack);
+            Transform t = obj.gameObject.transform;
 
-        Destroy(Instantiate(particle, t.position, t.rotation),0.5f);
+            Destroy(Instantiate(particle, t.position, t.rotation), 0.5f);
+        }
     }
 }
