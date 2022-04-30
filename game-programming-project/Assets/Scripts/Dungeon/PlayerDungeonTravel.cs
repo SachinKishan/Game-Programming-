@@ -26,7 +26,7 @@ public class PlayerDungeonTravel : MonoBehaviour
         	{
             		Generator.main.InstantiateDungeon();
 			currentDungeon=Generator.main.currentDungeon;
-			StartCoroutine(LerpPosition(currentDungeon.transform.position,1f));
+			//StartCoroutine(LerpPosition(currentDungeon.transform.position,1f));
         	}
 	}
 
